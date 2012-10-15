@@ -2,7 +2,10 @@
 \usepackage{fullpage}
 \usepackage[compact]{titlesec}
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{2pt}
+\setlength{\parskip}{.1in}
+
+\newenvironment{denseItemize}{%
+\begin{list}{$\bullet$}{\setlength{\itemsep}{0in}\setlength{\parsep}{.05in}}}{\end{list}}
 
 \begin{document}
 
@@ -27,15 +30,49 @@ York College of Pennsylvania\\
 
 \section*{Statement of Topic}
 
-{\large Sharing and Reusing Programming Exercises with CloudCoder}
+{\large CloudCoder: Building a Community for Using and Sharing Programming Exercises}
 
 \section*{Significance and Relevance of the Topic}
 
-Evidence that pass rates are still low in CS1 and CS2 courses.
+Learning to program is difficult.  While some students master
+fundamental programming concepts with relatively little difficulty,
+most students in introductory programming courses struggle
+to master syntax and basic programming techniques.
 
-Evidence that exercises can be effective for developing and reinforcing skills.
+Practice helps.  [TODO: Evidence that more practice is correlated with
+success.]  [TODO: Evidence that time spent with interactive execises
+improves learning - problets? intelligent tutoring systems?]
 
-Difficulty of writing exercises; solution is crowdsourcing.
+Many interactive programming exercise systems have been developed.
+For example, CodeLab, CodingBat, Problets, Practice-It!, just to
+name a few.  While all of these systems have been useful, all of
+them are to some extent closed ecosystems, for a variety of reasons:
+
+\begin{denseItemize}
+\item In commercial services such as CodeLab,
+      students must pay to access programming exercises
+\item All of the existing systems we know about are closed-source
+\item All of the existing systems we know about,
+      self-hosting is not an option
+\item Some free services such as Practice-It! may include
+      exercises that are not freely redistributable
+\end{denseItemize}
+
+Our thesis is that an open ecosystem for programming exercises
+is needed.  The features of such an ecosystem would be:
+
+\begin{denseItemize}
+\item Open source software, with contributions from the community
+      actively solicited
+\item A central repository for the sharing of freely-redistibutable exercises
+      written by community members
+\item Freedom for users of the system to self-host or use a hosting service
+\end{denseItemize}
+
+All of these features are motivated by the desire to remove 
+barriers to the adoption and use of a programming exercises,
+and to make a large repository of high-quality exercises available.
+
 
 \section*{Content}
 
