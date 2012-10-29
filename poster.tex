@@ -1,6 +1,8 @@
 \documentclass[11pt]{article}
 \usepackage{fullpage}
 \usepackage[compact]{titlesec}
+\usepackage{url}
+
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{.1in}
 
@@ -31,15 +33,15 @@ York College of Pennsylvania\\
 {\large\bf Matthew Hertz}\\
 Department of Computer Science\\
 Canisius College\\
-{\it fill in address}, USA\\
+Buffalo, NY 14208, USA\\
 {\tt hertzm@canisius.edu}
 \end{minipage}
 \begin{minipage}{3in}
 {\large\bf Paul Denny}\\
 Department of Computer Science\\
 University of Auckland\\
-{\it fill in address}, NZ\\
-{\it fill in email}
+Private Bag 92019, Auckland, NZ\\
+{\tt paul@cs.auckland.ac.nz}
 \end{minipage}\\
 
 \end{quote}
@@ -55,9 +57,11 @@ fundamental programming concepts with relatively little difficulty,
 most students in introductory programming courses struggle
 to master syntax and basic programming techniques.
 
-Practice helps.  [TODO: Evidence that more practice is correlated with
-success.]  [TODO: Evidence that time spent with interactive execises
-improves learning - problets? intelligent tutoring systems?]
+Programming exercises---short, focused, automatically assessed
+programming problems---can help students learn basic skills and techniques.
+Because they are automatically graded, they provide immediate feedback
+for students.  They can be used as self-tests (to accompany reading assignments),
+in-class assessment, and for practice and skills development.
 
 Many interactive programming exercise systems have been developed.
 For example, CodeLab, CodingBat, Problets, Practice-It!, just to
@@ -92,11 +96,43 @@ for anyone to use.
 
 \section*{Content}
 
-Describe CloudCoder and the exercise repository.
+CloudCoder (\url{http://cloudcoder.org}) is an open source web-based
+programming exercise system.  It currently supports the C, Java, and
+Python programming languages.  Although in a somewhat early stage of
+development, it has been used successfully by several hundred students
+at the authors' home institutions.  It is relatively easy to
+install and configure, and requires two Linux servers
+(one to host the web application and database, and another to build
+and test student submissions.)
 
-Present data on use of the exercise repository: how many exercises? How often have exercises
-been reused between institutions?  What have we learned about exercise sharing and how
-instructors can make effective use of available exercises?
+A novel feature of CloudCoder is a central exercise repository
+(\url{https://cloudcoder.org/repo}) where
+instructors can easily find exercises to use in their classes,
+and share exercises they have written with the community.  All exercises
+published in the repository are available under a permissive license
+such as Creative Commons.
+
+The poster will discuss the motivations for CloudCoder and briefly summarize
+its features.  We will talk about our goal of building a self-sustaining
+community around CloudCoder and its exercise repository.
+
+In early 2013 we will be conducting a study where we will use CloudCoder
+in introductory programming courses for self-test exercises, in-class
+assessment, in-class lab activities, and remediation for students who need
+extra practice.  We should be able to present some initial data regarding
+two of our primary research questions:
+
+\begin{enumerate}
+\item Can CloudCoder help improve student learning?
+\item Can exercises shared in the repository be transferred
+      easily between institutions and courses?
+\end{enumerate}
+
+Finally, we intend to use the poster to solicit additional users.
+Our intention is to present a case that there is no reason {\em not}
+to use programming exercises in introductory programming courses,
+and that CloudCoder provides a simple and free way to add them
+to a course.
 
 \section*{Abstract}
 
