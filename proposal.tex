@@ -2,12 +2,16 @@
 \usepackage{fullpage}
 \usepackage[compact]{titlesec}
 \usepackage{url}
+\usepackage{enumitem}
 
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{.1in}
 
-\newenvironment{denseItemize}{%
-\begin{list}{$\bullet$}{\setlength{\itemsep}{0in}\setlength{\parsep}{.05in}}}{\end{list}}
+\newcommand{\BI}{\begin{itemize}[itemsep=.05in,parsep=0in]}
+\newcommand{\EI}{\end{itemize}}
+
+\newcommand{\BE}{\begin{enumerate}[itemsep=.05in,parsep=0in]}
+\newcommand{\EE}{\end{enumerate}}
 
 \begin{document}
 
@@ -54,7 +58,7 @@ Private Bag 92019, Auckland, NZ\\
 
 Learning to program is difficult.  While some students master
 fundamental programming concepts with relatively little difficulty,
-most students in introductory programming courses struggle
+many students in introductory programming courses struggle
 to master syntax and basic programming techniques.
 
 Programming exercises---short, focused, automatically assessed
@@ -68,7 +72,7 @@ For example, CodeLab, CodingBat, Problets, Practice-It!, just to
 name a few.  While all of these systems are useful, all of
 them are to some extent closed ecosystems, for a variety of reasons:
 
-\begin{denseItemize}
+\BI
 \item In commercial services such as CodeLab,
       students must pay to access programming exercises
 \item All of the existing systems we know about are closed-source
@@ -76,18 +80,18 @@ them are to some extent closed ecosystems, for a variety of reasons:
       self-hosting is not an option
 \item Some free services such as Practice-It! may include
       exercises that are not freely redistributable
-\end{denseItemize}
+\EI
 
 Our thesis is that an open ecosystem for programming exercises
 is needed.  The features of such an ecosystem would be:
 
-\begin{denseItemize}
+\BI
 \item Open source software, with contributions from the community
       actively solicited
 \item A central repository for the sharing of freely-redistibutable exercises
       written by community members
 \item Freedom for users of the system to self-host or use a hosting service
-\end{denseItemize}
+\EI
 
 All of these features are motivated by the desire to remove 
 barriers to the adoption and use of a programming exercises,
@@ -122,11 +126,11 @@ assessment, in-class lab activities, and remediation for students who need
 extra practice.  We should be able to present some initial data regarding
 two of our primary research questions:
 
-\begin{enumerate}
+\BE
 \item Can CloudCoder help improve student learning?
 \item Can exercises shared in the repository be transferred
       easily between institutions and courses?
-\end{enumerate}
+\EE
 
 Finally, we intend to use the poster to solicit additional users.
 Our intention is to present a case that there is no reason {\em not}
