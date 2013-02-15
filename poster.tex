@@ -1,0 +1,112 @@
+\documentclass[landscape,paperwidth=40in,paperheight=34in]{baposter}
+
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{url}
+
+% This prevents a \section being created for the bibliography
+\renewcommand{\section}[2]{}%
+
+\newcommand{\BI}{\begin{itemize}[itemsep=.05in,parsep=0in,leftmargin=.2in]}
+\newcommand{\EI}{\end{itemize}}
+
+\newcommand{\BE}{\begin{enumerate}[itemsep=.05in,parsep=0in,leftmargin=.2in]}
+\newcommand{\EE}{\end{enumerate}}
+
+\begin{document}
+
+\begin{poster}{
+  % key=value Options
+  columns=4,
+  headerheight=0.105\textheight,
+  background=plain,
+  bgColorOne=white,
+  borderColor=black,
+  headerColorOne=blue!20!white,
+  headerColorTwo=blue!20!white,
+  headershape=rounded,
+  headerborder=none,
+  headerfont=\Large\bf,
+  textborder=none,
+  boxshade=none
+}{
+  % Eye catcher
+
+}{
+  % Poster title
+   %CloudCoder: Building a Community for Using and Sharing Programming Exercises
+   {\Huge CloudCoder: All Your Exercise Are Belong To Us}
+}{
+  % Poster authors
+\vskip .05in
+\begin{minipage}[t]{1.1in}
+{\large Jaime Spacco\\
+\vskip -.25in\small Knox College}
+\end{minipage}
+\begin{minipage}[t]{1.7in}
+{\large John Stamper\\
+\vskip -.2in\large Kelly Rivers\\
+\vskip -.25in\small Carnegie Mellon University}
+\end{minipage}
+\begin{minipage}[t]{1.2in}
+{\large Matthew Hertz\\
+\vskip -.25in\small Canisius College}
+\end{minipage}
+\begin{minipage}[t]{1.5in}
+{\large Paul Denny\\
+\vskip -.25in\small University of Auckland}
+\end{minipage}
+\begin{minipage}[t]{1.7in}
+{\large David Hovemeyer\\
+\vskip -.25in\small York College of PA}
+\end{minipage}
+
+%\begin{minipage}[t]{1in}
+%}
+%\begin{minipage}[t]{1in}
+%Matthew Hertz\\
+%Canisius College
+%}
+%\begin{minipage}[t]{1in}
+%Paul Denny\\
+%University of Auckland
+%}
+%\begin{minipage}[t]{1in}
+%David Hovemeyer\\
+%York College of PA
+%}
+}{
+  % University logo(s)
+  \includegraphics[height=.5in]{images/KnoxLogo}
+  \hskip .1in
+  \includegraphics[height=.5in]{images/cmu}
+  \hskip .1in
+  \includegraphics[height=.5in]{images/Canisius}
+  \hskip .1in
+  \includegraphics[height=.5in]{images/UniversityOfAuckland}
+  \hskip .1in
+  \includegraphics[height=.5in]{images/YCPLogo}
+}
+
+  % Definition of boxes
+  \headerbox{First box}{name=problem,column=0}{
+    \vskip .1in
+    {\raggedright\normalsize
+    \BI
+    \item An item
+    \item Another item
+    \item A third item
+    \EI
+    }
+  }
+
+  \headerbox{Support}{name=support,column=3}{
+    \vskip .1in
+    {\small
+    Supported by a SIGCSE special projects grant, May 2012
+    }
+  }
+
+\end{poster}
+
+\end{document}
