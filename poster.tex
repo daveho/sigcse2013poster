@@ -45,8 +45,8 @@
 \vskip -.25in\small Knox College}
 \end{minipage}
 \begin{minipage}[t]{1.7in}
-{\large John Stamper\\
-\vskip -.2in\large Kelly Rivers\\
+{\large Kelly Rivers\\
+\vskip -.2in\large John Stamper\\
 \vskip -.25in\small Carnegie Mellon University}
 \end{minipage}
 \begin{minipage}[t]{1.2in}
@@ -75,13 +75,59 @@
 }
 
   % Definition of boxes
-  \headerbox{First box}{name=problem,column=0}{
+  \headerbox{TL;DR}{name=tldr,column=0}{
     \vskip .1in
     {\raggedright\normalsize
     \BI
-    \item An item
-    \item Another item
-    \item A third item
+    \item CloudCoder is a free, open-source,
+          web-based programming exercise system
+    \item It supports C/C++, Python, and Ruby
+    \item It has a repository of free exercises
+          (contributions welcome)
+    \item Ask us for an account on our demo server
+    \item Did we mention that it's free?
+    \item \url{http://cloudcoder.org}
+    \EI
+    }
+  }
+
+  \headerbox{Programming Exercises!}{name=exercises,column=0,below=tldr}{
+    \vskip .1in
+    {\raggedright\normalsize
+    \BI
+    \item Automatically-evaluated exercises are useful in introductory
+          programming courses
+      \BI
+      \item For learning syntax
+      \item For learning basic concepts
+            (variables, decisions, loops, etc.)
+      \item For extra practice
+      \item For assessment
+      \EI
+    \item We think they can improve learning
+      \BI
+      \item {\it\color{red} Evidence for this?}
+      \EI
+    \EI
+    }
+  }
+
+  \headerbox{We need another system?}{name=anothersystem,column=0,below=exercises}{
+    \vskip .1in
+    {\raggedright\normalsize
+    \BI
+    \item Lots of existing systems:
+          CodingBat, PracticeIt!, CodeLab, etc.
+    \item We didn't know of one which was
+      \BI
+      \item Open source
+      \item Community-supported
+      \item Had freely-redistributable exercises
+      \item Allowed self-hosting and full access to
+            student data
+      \item Supported C/C++
+      \EI
+    \item So we wrote one
     \EI
     }
   }
