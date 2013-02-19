@@ -1,0 +1,44 @@
+\documentclass[11pt,a4paper]{memoir}
+\setstocksize{52mm}{90mm}
+\setpagecc{49mm}{87mm}{*}
+\settypeblocksize{43mm}{81mm}{*}
+\setulmargins{3mm}{*}{*}
+\setlrmargins{3mm}{*}{*}
+\setheadfoot{0.1pt}{0.1pt}
+\setheaderspaces{1pt}{*}{*}
+\checkandfixthelayout[fixed]
+\pagestyle{empty} 
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{url}
+
+\setlength{\parindent}{0in}
+
+\begin{document}
+%\pagecolor[cmyk]{...}
+\pagecolor{white}
+
+\begin{minipage}[t]{50mm}
+{\Huge CloudCoder}
+\vskip 3mm
+An open source, web-based\\
+programming exercise system
+\vskip 3mm
+\url{http://cloudcoder.org}
+\end{minipage}\hskip 2mm\begin{minipage}[t]{25mm}
+\vtop{%
+  \vskip -4mm
+  \hbox{%
+\includegraphics[width=25mm]{images/logo}
+  }%
+}
+\end{minipage}
+\vskip 2mm
+{\small
+\begin{tabbing}
+Contact: \= Jaime Spacco \textless jspacco@knox.edu\textgreater \\
+         \> David Hovemeyer \textless dhovemey@ycp.edu\textgreater
+\end{tabbing}
+}
+
+\end{document}
