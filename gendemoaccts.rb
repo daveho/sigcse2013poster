@@ -2,7 +2,7 @@
 
 # Generate guest accounts for demo server
 
-@rng = Random.new()
+#@rng = Random.new()
 
 def randpw
 	# Don't use l/1 or o/0
@@ -10,7 +10,9 @@ def randpw
 
 	pw = ""
 	8.times do |n|
-		pw << ch[@rng.rand(ch.length)]
+		#i = @rng.rand(ch.length)
+		i = rand(ch.length)
+		pw << ch[i]
 	end
 
 	return pw
