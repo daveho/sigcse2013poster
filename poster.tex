@@ -39,7 +39,7 @@
 }{
   % Poster authors
 \vskip .05in
-\begin{minipage}[t]{1.3in}
+\hskip .25in\begin{minipage}[t]{1.3in}
 {\large Jaime Spacco\\
 \vskip -.2in\large Andrei Papancea\\
 \vskip -.25in\small Knox College}
@@ -57,9 +57,9 @@
 {\large Paul Denny\\
 \vskip -.25in\small University of Auckland}
 \end{minipage}
-\begin{minipage}[t]{1.7in}
+\begin{minipage}[t]{1.8in}
 {\large David Hovemeyer\\
-\vskip -.25in\small York College of PA}
+\vskip -.25in\small York College of Pennsylvania}
 \end{minipage}
 }{
   % University logo(s)
@@ -135,13 +135,6 @@
     }
   }
 
-  \headerbox{Support}{name=support,column=3}{
-    \vskip .1in
-    {\small
-    Supported by a SIGCSE special projects grant, May 2012
-    }
-  }
-
   \headerbox{Need for a community}{name=community,column=1}{
     \vskip .1in
     {\raggedright\normalsize
@@ -166,6 +159,20 @@
       \item Recommend sequences of exercises?
       \EI
     \EI
+    }
+  }
+
+  \headerbox{Screenshots}{name=screenshot,column=2,span=2}{
+    \vskip .1in
+    \begin{center}
+    \includegraphics[width=5.25in]{images/menu}
+    \end{center}
+  }
+
+  \headerbox{Support}{name=support,column=3,below=screenshot}{
+    \vskip .1in
+    {\small
+    Supported by a SIGCSE special projects grant, May 2012
     }
   }
 
