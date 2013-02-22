@@ -135,7 +135,26 @@
     }
   }
 
-  \headerbox{Need for a community}{name=community,column=1}{
+  \headerbox{Requirements}{name=requirements,column=1}{
+    \vskip .1in
+    {\raggedright\normalsize
+    \BI
+    \item Students need {\bf just a web browser}
+      \BI
+      \item {\bf No plugins required}: client is 100\% HTML/CSS/Javascript
+      \EI
+    \item System runs on {\bf two Linux servers}
+      \BI
+      \item One (network-facing) for webapp and database:
+            EC2 micro instance works well
+      \item One (network connected) to build and test submissions:
+            can be any PC connected to network
+      \EI
+    \EI
+    }
+  }
+
+  \headerbox{Need for a community}{name=community,column=1,below=requirements}{
     \vskip .1in
     {\raggedright\normalsize
     \BI
@@ -153,6 +172,7 @@
 
   \headerbox{Exercise repository}{name=repository,column=1,below=community}{
     \vskip .1in
+    {\raggedright\normalsize
     \BI
     \item Writing good exercises is a challenge:
           but many hands make light work
@@ -175,6 +195,7 @@
           Goal: implement these features
           by August 2013
     \EI
+    }
   }
 
   \headerbox{Screenshots}{name=screenshot,column=2,span=3}{
