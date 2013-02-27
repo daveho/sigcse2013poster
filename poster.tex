@@ -20,6 +20,8 @@
 \definecolor{paleyellow}{HTML}{FFFACD}
 
 \tikzstyle{bigurl} = [fill=paleyellow, text=black, draw=blue, very thick, rounded corners, inner sep=8pt, inner ysep=6pt]
+\tikzstyle{medurl} = [fill=paleyellow, text=black, draw=blue, very thick, rounded corners, inner sep=4pt, inner ysep=3pt]
+\tikzstyle{checkitout} = [fill=white, text=black, draw=black, very thick, rounded corners, inner sep=8pt, inner ysep=6pt]
 
 \begin{document}
 
@@ -106,7 +108,6 @@ Carnegie-Mellon University
     \vskip -.05in
     \centerline{
       \begin{tikzpicture}
-%        \Large\url{http://cloudcoder.org}
         \node [bigurl] {{\Large\tt http://cloudcoder.org}};
       \end{tikzpicture}
     }
@@ -198,8 +199,11 @@ Carnegie-Mellon University
     \BI
     \item Writing good exercises is a challenge:
           but {\bf many hands make light work}
-    \item CloudCoder {\bf exercise repository}:\\
-          \url{https://cloudcoder.org/repo}
+    \item CloudCoder {\bf exercise repository}:
+          \vskip .1in
+          \begin{tikzpicture}
+            \node [medurl] {{\tt https://cloudcoder.org/repo}};
+          \end{tikzpicture}
       \BI
       \item {\bf User-contributed} exercises
       \item All exercises available under {\bf permissive licenses}
@@ -304,6 +308,14 @@ Carnegie-Mellon University
     \vskip .1in
     {\raggedright\normalsize
     Supported by a SIGCSE special projects grant, May 2012
+
+    %\hfill\includegraphics[width=1.7in]{images/kitten}\\
+    %\hfill{\it meow}
+
+    \vskip 1.7in
+    \hfill\begin{tikzpicture}
+      \node[checkitout] {\includegraphics[width=2in]{images/checkitout}};
+    \end{tikzpicture}
     }
   }
 
