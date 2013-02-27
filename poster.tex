@@ -13,7 +13,16 @@
 \newcommand{\BE}{\begin{enumerate}[itemsep=.05in,parsep=0in,leftmargin=.2in]}
 \newcommand{\EE}{\end{enumerate}}
 
+\newsavebox{\hcii}
+
 \begin{document}
+
+\sbox{\hcii}{
+\begin{minipage}{2.5in}
+\small Human-Computer Interaction Institute,\\
+Carnegie-Mellon University
+\end{minipage}
+}
 
 \begin{poster}{
   % key=value Options
@@ -44,11 +53,6 @@
 \vskip -.2in\large Andrei Papancea\\
 \vskip -.25in\small Knox College}
 \end{minipage}
-\begin{minipage}[t]{1.65in}
-{\large Kelly Rivers\\
-\vskip -.2in\large John Stamper\\
-\vskip -.25in\small Carnegie Mellon University}
-\end{minipage}
 \begin{minipage}[t]{1.2in}
 {\large Matthew Hertz\\
 \vskip -.25in\small Canisius College}
@@ -61,17 +65,22 @@
 {\large David Hovemeyer\\
 \vskip -.25in\small York College of Pennsylvania}
 \end{minipage}
+\begin{minipage}[t]{2.5in}
+{\large Kelly Rivers\\
+\vskip -.2in\large John Stamper\\
+\vskip -.17in\hskip -.05in\usebox{\hcii}}
+\end{minipage}
 }{
   % University logo(s)
   \includegraphics[height=.5in]{images/KnoxLogo}
-  \hskip .1in
-  \includegraphics[height=.5in]{images/cmu}
   \hskip .1in
   \includegraphics[height=.5in]{images/Canisius}
   \hskip .1in
   \includegraphics[height=.5in]{images/UniversityOfAuckland}
   \hskip .1in
   \includegraphics[height=.5in]{images/YCPLogo}
+  \hskip .1in
+  \includegraphics[height=.5in]{images/HCII_logo}
 }
 
   % Definition of boxes
@@ -86,9 +95,10 @@
           (contributions welcome)
     \item Ask us for a {\bf demo server account}
     \item Did we mention that it's {\bf free}?
-    \item \url{http://cloudcoder.org}
     \EI
     }
+    \vskip -.05in
+    \centerline{\Large\url{http://cloudcoder.org}}
   }
 
   \headerbox{Programming exercises!}{name=exercises,column=0,below=tldr}{
