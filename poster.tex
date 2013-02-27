@@ -3,6 +3,8 @@
 \usepackage{graphicx}
 \usepackage{enumitem}
 \usepackage{url}
+\usepackage{tikz}
+\usepackage{xcolor}
 
 % This prevents a \section being created for the bibliography
 \renewcommand{\section}[2]{}%
@@ -14,6 +16,10 @@
 \newcommand{\EE}{\end{enumerate}}
 
 \newsavebox{\hcii}
+
+\definecolor{paleyellow}{HTML}{FFFACD}
+
+\tikzstyle{bigurl} = [fill=paleyellow, text=black, rounded corners, inner sep=8pt, inner ysep=6pt]
 
 \begin{document}
 
@@ -98,7 +104,12 @@ Carnegie-Mellon University
     \EI
     }
     \vskip -.05in
-    \centerline{\Large\url{http://cloudcoder.org}}
+    \centerline{
+      \begin{tikzpicture}
+%        \Large\url{http://cloudcoder.org}
+        \node [bigurl] {{\Large\tt http://cloudcoder.org}};
+      \end{tikzpicture}
+    }
   }
 
   \headerbox{Programming exercises!}{name=exercises,column=0,below=tldr}{
@@ -140,7 +151,7 @@ Carnegie-Mellon University
       \item Supported {\bf in-class assessment} (i.e., quizzes)
       \item Supported C/C++
       \EI
-    \item So we wrote one
+    %\item So we wrote one
     \EI
     }
   }
