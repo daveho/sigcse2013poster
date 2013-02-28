@@ -1,5 +1,7 @@
 *.aux
 *.log
+*.bbl
+*.blg
 proposal.pdf
 poster.pdf
 businessCard.pdf

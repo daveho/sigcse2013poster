@@ -118,7 +118,7 @@ Carnegie-Mellon University
     {\raggedright\normalsize
     \BI
     \item Automatically-evaluated exercises are useful in introductory
-          programming courses
+          programming courses\cite{gotelPPPJ2007}\cite{hallJSSC2008}\cite{williamsJSSC2006}
       \BI
       \item For learning {\bf syntax}
       \item For learning {\bf basic concepts}
@@ -215,7 +215,7 @@ Carnegie-Mellon University
       \BI
       \item {\bf Classify} exercises? (tagging)
       \item {\bf Rate} exercises?
-      \item Fork and {\bf improve} existing exercises?
+      \item {\bf Improve} existing exercises?
       \item {\bf Recommend} exercises?
       \item Recommend {\bf sequences} of exercises?
       \EI
@@ -288,19 +288,20 @@ Carnegie-Mellon University
     \end{minipage}
   }
 
-  \headerbox{Conclusions, future work}{name=futurework,column=4,below=screenshot}{
-    \vskip .1in
-    {\raggedright\normalsize
-    \BI
-    \item Future work?
-    \EI
-    }
-  }
+%  \headerbox{Conclusions, future work}{name=futurework,column=4,below=screenshot}{
+%    \vskip .1in
+%    {\raggedright\normalsize
+%    \BI
+%    \item Future work?
+%    \EI
+%    }
+%  }
 
-  \headerbox{References}{name=references,column=4,below=futurework}{
+  \headerbox{References}{name=references,column=4,below=screenshot}{
     \vskip .1in
-    {\raggedright\normalsize
-    References?
+    {\scriptsize
+    \bibliographystyle{plain}
+    \bibliography{poster}
     }
   }
 
@@ -310,9 +311,10 @@ Carnegie-Mellon University
     Supported by a SIGCSE special projects grant, May 2012
 
     % Just a placeholder :-)
-    \hfill\includegraphics[width=1in]{images/kitten}\\
-    \hfill{\it meow}
-    \vskip .4in
+    %\hfill\includegraphics[width=1in]{images/kitten}\\
+    %\hfill{\it meow}
+    %\vskip .4in
+    \vskip .75in
 
     \hfill\begin{tikzpicture}
       \node[checkitout] {\includegraphics[width=2in]{images/checkitout}};
