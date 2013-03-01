@@ -6,7 +6,7 @@
 
 def randpw
 	# Don't use l/1 or o/0
-	ch = "abcdefghjklmnpqrstuvwxyz23456789"
+	ch = "abcdefghjkmnpqrstuvwxyz23456789"
 
 	pw = ""
 	8.times do |n|
@@ -21,9 +21,9 @@ end
 ccout = File.open("ccaccts.txt", "w");
 labelout = File.open("cclabels.csv", "w");
 
-labelout.puts "uname,pword"
+#labelout.puts "uname,pword"
 
-(1..78).each do |n|
+(81..160).each do |n|
 	#puts "guest#{n}"
 
 	username = "guest#{n}"
