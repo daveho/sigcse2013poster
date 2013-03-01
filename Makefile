@@ -1,2 +1,5 @@
 poster.pdf : poster.tex poster.bib
-	pdflatex poster.tex
+	pdflatex poster
+	bibtex poster
+	pdflatex poster
+	pdflatex poster
